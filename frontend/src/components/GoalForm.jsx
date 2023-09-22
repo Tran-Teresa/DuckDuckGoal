@@ -15,7 +15,6 @@ function GoalForm() {
         setText('')
     }
 
-
   return <section className="form">
     <form onSubmit={onSubmit}>
         <div className="form-group">

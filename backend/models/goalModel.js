@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 
+
 const goalSchema = mongoose.Schema(
     {
         user: {
@@ -10,7 +11,11 @@ const goalSchema = mongoose.Schema(
         text: {
             type: String,
             required: [true, 'Please add a text value']
-    }
+        },
+        image: {
+            type: String,
+            required: true,
+        }
 }, {
     timestamps: true
 }

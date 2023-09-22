@@ -10,6 +10,7 @@ function GoalItem({ goal }) {
         <div>{new Date(goal.createdAt).toLocaleString('en-US')}</div>
         <h2>{goal.text}</h2>
         <button onClick={() => dispatch(deleteGoal(goal._id))}className="close">X</button>
+        <img src={goal.image} alt="Random duck" height="200"></img>
     </div>
   )
 }
