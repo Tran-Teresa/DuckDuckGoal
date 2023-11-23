@@ -4,6 +4,7 @@
   "description": "Goalsetter app",
   "main": "server.js",
   "scripts": {
+    "prestart": "chmod +x node_modules/.bin/nodemon",
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
